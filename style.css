@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    /* border: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --tamanho: 1rem;
+    --fonte: verdana;
+    --corFonte: white;
+}
+
+.modificado{
+    font-family: var(--fonte);    
+    font-size: var(--tamanho);
+    color: var(--corFonte);
+}
+
+.estiloEspecial {
+    font-family: var(--fonte);
+    font-size: var(--tamanho);
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    width: 20%;
+}
+
+header, #mostraTotal, span{
+    display: flex;
+}
+
+header{        
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #558B2F;
+    border-bottom: 5px solid darkgreen;
+}
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+#tituloLista, #tituloCesta {    
+    background-color: #EF6C00;
+    border-bottom: 5px solid #BF360C;
+    margin-top: 10px;
+}
+
+#lista, #suaCesta{
+    width: 100%;
+    height: auto;
+}   
+
+#lista, #suaCesta > li{    
+    margin-top: 5px;
+    color: black;
+}
+
+li{
+    margin: 5px 0 5px 0;
+    background-color: white;    
+    border: 2px solid #FFF3E0;
+    padding: 5px;
+}
+
+li:hover, span, #armazenaPreco{
+    font-weight: bold;
+}
+
+
+li:hover{
+    cursor: pointer;
+    background-color: #FFE0B2;
+}
+
+#mostraTotal{
+    margin-top: 10px;        
+    width: 100%;    
+    height: auto;        
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+span {
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #558B2F;    
+}
+
+#armazenaPreco{
+    right: 0;
+    padding: 5px;
+    width: 40%;
+}
